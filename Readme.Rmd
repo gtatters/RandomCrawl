@@ -28,6 +28,10 @@ http://www.journals.uchicago.edu/doi/abs/10.1086/701236
 
 As we were assessing behavioural thermoregulation using a rectangular tank that had a linear temperature gradient along the floor, and because snails are rather slow moving, we wanted to compare the exploration of this environment to that of a null model for movement. 
 
+("https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.avi")
+
+("https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi")
+
 Null models are important in behavioural thermoregulation studies since they allow us to assess how the animal would behave if it were not orienting specifically with respect to temperature.  Ectothermic animals, whose body temperature depends on the local ambient temperature, would be prone to move more slowly at cold temperatures, and more rapidly at higher temperatures simply due to Arhennius (Q10) effects on muscle function.  Thus, we want to understand how a randomly crawling snail would behave when exposed to a thermal gradient.  In other words, what would the null distribution be for random movement?  This null distribution can then be compared to real animal distributions and allow us to conclude whether preference or random movement explains the results.
 
 There are many packages in R that allow for random walks.  Here is SiMRiv in action:

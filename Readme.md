@@ -19,6 +19,10 @@ tank that had a linear temperature gradient along the floor, and because
 snails are rather slow moving, we wanted to compare the exploration of
 this environment to that of a null model for movement.
 
+("<https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.avi>")
+
+("<https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi>")
+
 Null models are important in behavioural thermoregulation studies since
 they allow us to assess how the animal would behave if it were not
 orienting specifically with respect to temperature. Ectothermic animals,
@@ -305,7 +309,7 @@ since the time required is very long:
     system.time(res1<-replicate(30, rep_sim.snail(Q10=1)))
 
     ##    user  system elapsed 
-    ##  12.718   0.572  13.329
+    ##  12.774   0.609  13.429
 
     par(mfrow=c(1,2))
     hist(res2, main="Q10 = 2", xlim=c(15,35), xlab=expression("Temperature" ( degree*C)))
