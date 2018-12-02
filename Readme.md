@@ -1,5 +1,8 @@
-Randomly Crawling Snail - Modelling Null Distributions in Thermal Gradients
-===========================================================================
+Randomly Crawling Snails:
+=========================
+
+Modelling Null Distributions in Thermal Gradients
+-------------------------------------------------
 
 We recently published a paper on behavioural thermoregulation in snails
 infected with parasite trematodes:
@@ -309,7 +312,7 @@ since the time required is very long:
     system.time(res1<-replicate(30, rep_sim.snail(Q10=1)))
 
     ##    user  system elapsed 
-    ##  12.774   0.609  13.429
+    ##  12.738   0.519  13.442
 
     par(mfrow=c(1,2))
     hist(res2, main="Q10 = 2", xlim=c(15,35), xlab=expression("Temperature" ( degree*C)))

@@ -1,5 +1,5 @@
 ---
-title: "Random Crawling Snail"
+title: "Random Crawling Snails"
 author: "Glenn J Tattersall"
 date: '2018-12-01'
 output: md_document
@@ -10,7 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = "/Users/GlennTattersall/Dropbox/R/MyProjects/RandomCrawl/Data")
 ```
 
-# Randomly Crawling Snail - Modelling Null Distributions in Thermal Gradients
+# Randomly Crawling Snails:
+## Modelling Null Distributions in Thermal Gradients
 
 We recently published a paper on behavioural thermoregulation in snails infected with parasite trematodes:
 
@@ -28,7 +29,7 @@ http://www.journals.uchicago.edu/doi/abs/10.1086/701236
 
 As we were assessing behavioural thermoregulation using a rectangular tank that had a linear temperature gradient along the floor, and because snails are rather slow moving, we wanted to compare the exploration of this environment to that of a null model for movement. 
 
-("https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.avi")
+(https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif)
 
 ("https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi")
 
