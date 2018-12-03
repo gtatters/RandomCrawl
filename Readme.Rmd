@@ -10,8 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = "/Users/GlennTattersall/Dropbox/R/MyProjects/RandomCrawl/Data")
 ```
 
-# Randomly Crawling Snails
-## Modelling Null Distributions in Thermal Gradients
+# Randomly Crawling Snails: Modelling Null Distributions in Thermal Gradients
 
 We recently published a paper on behavioural thermoregulation in snails infected with parasite trematodes:
 

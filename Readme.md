@@ -1,8 +1,5 @@
-Randomly Crawling Snails:
-=========================
-
-Modelling Null Distributions in Thermal Gradients
--------------------------------------------------
+Randomly Crawling Snails: Modelling Null Distributions in Thermal Gradients
+===========================================================================
 
 We recently published a paper on behavioural thermoregulation in snails
 infected with parasite trematodes:
@@ -22,7 +19,7 @@ tank that had a linear temperature gradient along the floor, and because
 snails are rather slow moving, we wanted to compare the exploration of
 this environment to that of a null model for movement.
 
-("<https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.avi>")
+(<https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif>)
 
 ("<https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi>")
 
@@ -296,24 +293,20 @@ our biological question.
 
 Technically we want to replicate this 1000 to 10000 times to assess the
 empirical distribution, but the code is slow and best run using parallel
-computing. Below we'll create two functions, one with *Q*<sub>10</sub>=2
-and the other with *Q*<sub>10</sub>=1 and run 30 replicates for each,
-since the time required is very long:
+computing. Below we'll create another function with an adjustable
+*Q*<sub>10</sub>, and run 30 replicates for each, since the time
+required is very long:
 
     rep_sim.snail<-function(Q10=2){
-      res<-sim.snail(MaxX=53, MinX=0, MaxY=7.5, MinY=0, Pstop=0.001, Steps=28800,
-                      Vels=Vels, b=b, m=m, Q10=Q10, Tref=22,
-                      mua=0, rhoa=rhoa, rhostop=0.5*rhoa,
-                      rhowall=0.5, export="meanlasthour")
+      res<-sim.snail(MaxX=MaxX, MinX=MinX, MaxY=MaxY, MinY=MinY, Pstop=Pstop, Steps=Steps,
+                      Vels=Vels, b=b, m=m, Q10=Q10, Tref=Tref,
+                      mua=mua, rhoa=rhoa, rhostop=rhostop,
+                      rhowall=rhowall, export="meanlasthour")
       return(res)
     }
 
     res2<-replicate(30, rep_sim.snail(Q10=2))
-    system.time(res1<-replicate(30, rep_sim.snail(Q10=1)))
-
-    ##    user  system elapsed 
-    ##  12.738   0.519  13.442
-
+    res1<-replicate(30, rep_sim.snail(Q10=1))
     par(mfrow=c(1,2))
     hist(res2, main="Q10 = 2", xlim=c(15,35), xlab=expression("Temperature" ( degree*C)))
     hist(res1, main="Q10 = 1", xlim=c(15,35), xlab=expression("Temperature" ( degree*C)))
