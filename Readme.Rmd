@@ -1,7 +1,7 @@
 ---
 title: "Random Crawling Snails"
 author: "Glenn J Tattersall"
-date: '2018-12-01'
+date: "2018-12-01"
 output: md_document
 ---
 
@@ -14,7 +14,7 @@ knitr::opts_knit$set(root.dir = "/Users/GlennTattersall/Dropbox/R/MyProjects/Ran
 
 We recently published a paper on behavioural thermoregulation in snails infected with parasite trematodes:
 
-<br>
+___
 
 \setlength{\leftskip}{1cm}
 
@@ -22,15 +22,21 @@ We recently published a paper on behavioural thermoregulation in snails infected
 
 http://www.journals.uchicago.edu/doi/abs/10.1086/701236
 
+___
+
 \setlength{\leftskip}{0pt}
 
 <br>
 
 As we were assessing behavioural thermoregulation using a rectangular tank that had a linear temperature gradient along the floor, and because snails are rather slow moving, we wanted to compare the exploration of this environment to that of a null model for movement. 
 
+[Active Snail] 
 <img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif"/>
 
-(https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif)
+[Inactive Snail]
+<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif"/>
+
+(https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.avi)
 
 ("https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi")
 
@@ -49,6 +55,8 @@ plot(sim.rw, type = "l", asp = 1, main = "Random walk")
 
 But none of the packages had boundary limits and options for allowing flexible displacement (i.e. movement velocity that depends on location) functions required for our experiment.  So, I have made my own function (*sim.snail*) to generate random movement within a thermal gradient.
 
+___
+
 # Required libraries
 
 We'll need the following libraries active for this demonstration.
@@ -61,14 +69,14 @@ library(CircStats)
  
  
 </br>
-
-</br>
  
  
 ```{r, echo=FALSE}
 setwd("/Users/GlennTattersall/Dropbox/R/MyProjects/RandomCrawl/Data")
 source("/Users/GlennTattersall/Dropbox/R/MyProjects/RandomCrawl/R/sim.snail.R")
 ```
+
+___
 
 # A null model of movement in a constrained enviroment
 
@@ -186,6 +194,8 @@ rhostop<-0.5*rhoa
 rhowall<-0.9
 ```
 
+___
+
 ## Using the *sim.snail* function 
 
 With all these parameters in place, we can call the function.  The function *sim.snail()*
@@ -204,6 +214,8 @@ Boundaries are provided to keep the walk within a known spatial limit.  When a n
 
 Finally, *export* can be set to "path" or "meanlasthour".  "path" will return a data frame with the X,Y,theta, and temperature for all 28800 steps.  "meanlasthour" simply returns the mean temperature in the last hour, which we used during a replication process.
 
+___
+
 ## Sample Output of the Random Crawl
 
 ```{r, fig.width = 6, fig.height = 2, fig.align="center"}
@@ -219,6 +231,8 @@ ggplot(res, aes(x=X, y=Y, col=Temperature))+
 ```
 
 <br>
+
+___
 
 ## Resulting Temperatures from the Random Crawl 
 
@@ -240,6 +254,8 @@ ggplot(res, aes(x=Temperature, fill=..x..))+
 ```
 
 <br>
+
+___
 
 ## Estimate Null Selected Temperature Distribution 
 
@@ -266,6 +282,8 @@ hist(res1, main="Q10 = 1", xlim=c(15,35), xlab=expression("Temperature" ( degree
 ```
 
 So, with only a few replications, it is apparent that temperature sensitivity predicts random clustering toward the cold end, as the crawl speed slows down in the cold, leading to more time spent in the cold.  But maybe this is a sampling error, so in the next section I'll show results from many more replications.
+
+___
 
 ### Final Replications
 

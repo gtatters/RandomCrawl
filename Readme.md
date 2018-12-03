@@ -4,13 +4,15 @@ Randomly Crawling Snails: Modelling Null Distributions in Thermal Gradients
 We recently published a paper on behavioural thermoregulation in snails
 infected with parasite trematodes:
 
-<br>
+------------------------------------------------------------------------
 
 *Wang, SYS, Tattersall, GJ, and Koprivnikar, J. 2019. Trematode parasite
 infection affects temperature selection in aquatic host snails.
 Physiological and Biochemical Zoology, 92(1):71–79.*
 
 <http://www.journals.uchicago.edu/doi/abs/10.1086/701236>
+
+------------------------------------------------------------------------
 
 <br>
 
@@ -19,9 +21,13 @@ tank that had a linear temperature gradient along the floor, and because
 snails are rather slow moving, we wanted to compare the exploration of
 this environment to that of a null model for movement.
 
+\[Active Snail\]
 <img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif"/>
 
-(<https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif>)
+\[Inactive Snail\]
+<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif"/>
+
+(<https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.avi>)
 
 ("<https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi>")
 
@@ -55,6 +61,8 @@ flexible displacement (i.e. movement velocity that depends on location)
 functions required for our experiment. So, I have made my own function
 (*sim.snail*) to generate random movement within a thermal gradient.
 
+------------------------------------------------------------------------
+
 Required libraries
 ==================
 
@@ -66,7 +74,7 @@ We'll need the following libraries active for this demonstration.
 
 </br>
 
-</br>
+------------------------------------------------------------------------
 
 A null model of movement in a constrained enviroment
 ====================================================
@@ -208,6 +216,8 @@ simply to be 0.9:
     rhostop<-0.5*rhoa
     rhowall<-0.9
 
+------------------------------------------------------------------------
+
 Using the *sim.snail* function
 ------------------------------
 
@@ -241,6 +251,8 @@ return a data frame with the X,Y,theta, and temperature for all 28800
 steps. "meanlasthour" simply returns the mean temperature in the last
 hour, which we used during a replication process.
 
+------------------------------------------------------------------------
+
 Sample Output of the Random Crawl
 ---------------------------------
 
@@ -257,6 +269,8 @@ Sample Output of the Random Crawl
 <img src="Readme_files/figure-markdown_strict/unnamed-chunk-17-1.png" style="display: block; margin: auto;" />
 
 <br>
+
+------------------------------------------------------------------------
 
 Resulting Temperatures from the Random Crawl
 --------------------------------------------
@@ -280,6 +294,8 @@ Here is what a resulting Temperature would look like:
 <img src="Readme_files/figure-markdown_strict/unnamed-chunk-18-2.png" style="display: block; margin: auto;" />
 
 <br>
+
+------------------------------------------------------------------------
 
 Estimate Null Selected Temperature Distribution
 -----------------------------------------------
@@ -320,6 +336,8 @@ sensitivity predicts random clustering toward the cold end, as the crawl
 speed slows down in the cold, leading to more time spent in the cold.
 But maybe this is a sampling error, so in the next section I'll show
 results from many more replications.
+
+------------------------------------------------------------------------
 
 ### Final Replications
 
