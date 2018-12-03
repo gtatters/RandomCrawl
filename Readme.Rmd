@@ -34,6 +34,10 @@ As we were assessing behavioural thermoregulation using a rectangular tank that 
 <img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif"/>
 <figcaption>Active Snail</figcaption>
 
+<a href="https://github.com/gtatters/RandomCrawl/blob/master/Data/">
+        <img src="Active.gif">
+        <div class="caption">Active Snail</div>
+
 <img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif"/>
 <figcaption>Inactive Snail</figcaption>
 
