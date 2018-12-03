@@ -11,6 +11,7 @@ knitr::opts_knit$set(root.dir = "/Users/GlennTattersall/Dropbox/R/MyProjects/Ran
 ```
 
 # Randomly Crawling Snails: Modelling Null Distributions in Thermal Gradients
+___
 
 We recently published a paper on behavioural thermoregulation in snails infected with parasite trematodes:
 
@@ -36,8 +37,6 @@ Here are images of the setup:
 <figcaption>Active Snail</figcaption>
 
 ___
-
-<br>
 
 <img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif" width=500/>
 <figcaption>Inactive Snail</figcaption>
