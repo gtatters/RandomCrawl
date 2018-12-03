@@ -21,17 +21,28 @@ tank that had a linear temperature gradient along the floor, and because
 snails are rather slow moving, we wanted to compare the exploration of
 this environment to that of a null model for movement.
 
-<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif"/>
+Here are images of the setup:
+
+<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif" width=500/>
 <figcaption>
 Active Snail
 </figcaption>
-<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif"/>
+
+------------------------------------------------------------------------
+
+<br>
+
+<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif" width=500/>
 <figcaption>
 Inactive Snail
 </figcaption>
-(<https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.avi>)
 
-("<https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi>")
+------------------------------------------------------------------------
+
+<br>
+
+Null Models
+-----------
 
 Null models are important in behavioural thermoregulation studies since
 they allow us to assess how the animal would behave if it were not
@@ -374,3 +385,12 @@ distributions for 10,000 randomisations:
 
 The primary difference here is that temperature sensitive movement
 predicts accumulation at lower temperatures.
+
+### Citation
+
+If you found this code of use, please cite the paper where we describe
+it in use:
+
+*Wang, SYS, Tattersall, GJ, and Koprivnikar, J. 2019. Trematode parasite
+infection affects temperature selection in aquatic host snails.
+Physiological and Biochemical Zoology, 92(1):71–79.*

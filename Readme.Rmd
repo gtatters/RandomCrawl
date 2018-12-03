@@ -30,20 +30,23 @@ ___
 
 As we were assessing behavioural thermoregulation using a rectangular tank that had a linear temperature gradient along the floor, and because snails are rather slow moving, we wanted to compare the exploration of this environment to that of a null model for movement. 
 
- 
-<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif"/>
+Here are images of the setup:
+
+<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif" width=500/>
 <figcaption>Active Snail</figcaption>
 
-<a href="https://github.com/gtatters/RandomCrawl/blob/master/Data/">
-        <img src="Active.gif">
-        <div class="caption">Active Snail</div>
+___
 
-<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif"/>
+<br>
+
+<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif" width=500/>
 <figcaption>Inactive Snail</figcaption>
 
-(https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.avi)
+___
 
-("https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi")
+<br>
+
+## Null Models
 
 Null models are important in behavioural thermoregulation studies since they allow us to assess how the animal would behave if it were not orienting specifically with respect to temperature.  Ectothermic animals, whose body temperature depends on the local ambient temperature, would be prone to move more slowly at cold temperatures, and more rapidly at higher temperatures simply due to Arhennius (Q10) effects on muscle function.  Thus, we want to understand how a randomly crawling snail would behave when exposed to a thermal gradient.  In other words, what would the null distribution be for random movement?  This null distribution can then be compared to real animal distributions and allow us to conclude whether preference or random movement explains the results.
 
@@ -316,3 +319,8 @@ ggplot(data.frame(Q10_2_VelsActiveDist), aes(x=Q10_2_VelsActiveDist, fill=..x..)
 The primary difference here is that temperature sensitive movement predicts accumulation at lower temperatures.  
 
 
+### Citation
+
+If you found this code of use, please cite the paper where we describe it in use:
+
+*Wang, SYS, Tattersall, GJ, and Koprivnikar, J. 2019.  Trematode parasite infection affects temperature selection in aquatic host snails. Physiological and Biochemical Zoology, 92(1):71–79.* 
