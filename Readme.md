@@ -19,6 +19,8 @@ tank that had a linear temperature gradient along the floor, and because
 snails are rather slow moving, we wanted to compare the exploration of
 this environment to that of a null model for movement.
 
+<img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif"/>
+
 (<https://github.com/gtatters/RandomCrawl/blob/master/Data/Active.gif>)
 
 ("<https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.avi>")
