@@ -1,10 +1,10 @@
 Randomly Crawling Snails: Modelling Null Distributions in Thermal Gradients
 ===========================================================================
 
+------------------------------------------------------------------------
+
 We recently published a paper on behavioural thermoregulation in snails
 infected with parasite trematodes:
-
-------------------------------------------------------------------------
 
 *Wang, SYS, Tattersall, GJ, and Koprivnikar, J. 2019. Trematode parasite
 infection affects temperature selection in aquatic host snails.
@@ -29,8 +29,6 @@ Active Snail
 </figcaption>
 
 ------------------------------------------------------------------------
-
-<br>
 
 <img src="https://github.com/gtatters/RandomCrawl/blob/master/Data/Inactive.gif" width=500/>
 <figcaption>
