@@ -15,8 +15,6 @@ ___
 
 We recently published a paper on behavioural thermoregulation in snails infected with parasite trematodes:
 
-___
-
 \setlength{\leftskip}{1cm}
 
 *Wang, SYS, Tattersall, GJ, and Koprivnikar, J. 2019.  Trematode parasite infection affects temperature selection in aquatic host snails. Physiological and Biochemical Zoology, 92(1):71–79.*  
